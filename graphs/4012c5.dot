@@ -1,0 +1,153 @@
+digraph {
+	n0 [label="Start; D: U:"]
+	n1 [label="004012c5; D:ESP,[ESP] U:ESP,EBP"]
+	n2 [label="004012c6; D:EBP U:ESP"]
+	n3 [label="004012c8; D:CF,ZF,SF,OF,ESP U:ESP"]
+	n4 [label="004012cb; D:ESP,[ESP] U:ESP,ESI"]
+	n5 [label="004012cc; D:ESI U:ECX"]
+	n6 [label="004012ce; D:CF,ZF,SF,OF U:ESI"]
+	n7 [label="004012d2; D: U:ZF"]
+	n8 [label="004012d4; D:CF,ZF,SF,OF,EAX U:EAX"]
+	n9 [label="004012d6; D: U:"]
+	n10 [label="004012db; D:ESP,[ESP] U:ESP,EBX"]
+	n11 [label="004012dc; D:ESP,[ESP] U:ESP,EDI"]
+	n12 [label="004012dd; D:ESP,[ESP] U:ESP,EBP"]
+	n13 [label="004012e0; D:EDI U:[0x4030f8]"]
+	n14 [label="004012e6; D:EAX U:EBP"]
+	n15 [label="004012e9; D:ESP,[ESP] U:ESP"]
+	n16 [label="004012ee; D:ESP,[ESP] U:ESP,EAX"]
+	n17 [label="004012ef; D:ESP,EDI,EAX U:ESP,EDI"]
+	n18 [label="004012f1; D:EBX U:[0x403130]"]
+	n19 [label="004012f7; D:CF,ZF,SF,OF,ESP U:ESP"]
+	n20 [label="004012fa; D:EAX U:EBP"]
+	n21 [label="004012fd; D:ESP,[ESP] U:ESP"]
+	n22 [label="00401302; D:ESP,[ESP] U:ESP"]
+	n23 [label="00401304; D:ESP,[ESP] U:ESP,EAX"]
+	n24 [label="00401305; D:ESP,[ESP] U:ESP,ESI"]
+	n25 [label="00401308; D:ESP,EBX,EAX U:ESP,EBX"]
+	n26 [label="0040130a; D:ESP,[ESP] U:ESP,EBP"]
+	n27 [label="0040130d; D:ESP,[ESP] U:ESP,EBP"]
+	n28 [label="00401310; D:ESP,[ESP] U:ESP"]
+	n29 [label="00401312; D:ESP,[ESP] U:ESP"]
+	n30 [label="00401314; D:ESP,[ESP] U:ESP,ESI"]
+	n31 [label="00401317; D:ESP,EAX U:ESP,[0x40311c]"]
+	n32 [label="0040131d; D:CF,ZF,SF,OF U:EAX"]
+	n33 [label="0040131f; D:[EBP+VAR_8] U:EAX,EBP"]
+	n34 [label="00401322; D: U:ZF"]
+	n35 [label="00401324; D:ESP,EAX U:ESP,[0x403098]"]
+	n36 [label="0040132a; D:CF,ZF,SF,OF U:EAX"]
+	n37 [label="0040132f; D: U:ZF"]
+	n38 [label="00401331; D:EAX U:EBP"]
+	n39 [label="00401334; D:[EBP+DWBUFFERLENGTH] U:EBP"]
+	n40 [label="0040133b; D:ESP,[ESP] U:ESP,EAX"]
+	n41 [label="0040133c; D:EAX U:EBP"]
+	n42 [label="0040133f; D:ESP,[ESP] U:ESP,EAX"]
+	n43 [label="00401340; D:ESP,[ESP] U:ESP"]
+	n44 [label="00401342; D:ESP,[ESP] U:ESP,ESI"]
+	n45 [label="00401345; D:ESP,EAX U:ESP,[0x403120]"]
+	n46 [label="0040134b; D:CF,ZF,SF,OF,[EBP+VAR_3] U:EBP"]
+	n47 [label="0040134f; D:EAX U:EBP"]
+	n48 [label="00401352; D:ESP,[ESP] U:ESP"]
+	n49 [label="00401354; D:ESP,[ESP] U:ESP,EAX"]
+	n50 [label="00401355; D:ESP,[ESP] U:ESP"]
+	n51 [label="00401357; D:ESP,[ESP] U:ESP,ESI"]
+	n52 [label="0040135a; D:ESP,EAX U:ESP,[0x40313c]"]
+	n53 [label="00401360; D:CF,ZF,SF,OF U:EAX"]
+	n54 [label="00401362; D: U:ZF"]
+	n55 [label="00401364; D:ESP,[ESP] U:ESP,EBP"]
+	n56 [label="00401367; D:EAX U:EBP"]
+	n57 [label="0040136a; D:ESP,[ESP] U:ESP"]
+	n58 [label="0040136f; D:ESP,[ESP] U:ESP,EAX"]
+	n59 [label="00401370; D:ESP,EDI,EAX U:ESP,EDI"]
+	n60 [label="00401372; D:CF,ZF,SF,OF,ESP U:ESP"]
+	n61 [label="00401375; D:EAX U:EBP"]
+	n62 [label="00401378; D:ESP,[ESP] U:ESP"]
+	n63 [label="0040137d; D:ESP,[ESP] U:ESP"]
+	n64 [label="0040137f; D:ESP,[ESP] U:ESP,EAX"]
+	n65 [label="00401380; D:ESP,[ESP] U:ESP,ESI"]
+	n66 [label="00401383; D: U:"]
+	n67 [label="00401385; D:EAX U:EBP"]
+	n68 [label="00401388; D:ESP,EDI U:ESP,[ESP]"]
+	n69 [label="00401389; D:ESP,EBX U:ESP,[ESP]"]
+	n70 [label="0040138a; D:ESP,ESI U:ESP,[ESP]"]
+	n71 [label="0040138b; D: U:"]
+	n72 [label="0040138c; D: U:"]
+
+	n0 -> n1
+	n1 -> n2
+	n2 -> n3
+	n3 -> n4
+	n4 -> n5
+	n5 -> n6
+	n6 -> n7
+	n7 -> n8
+	n7 -> n10
+	n8 -> n9
+	n9 -> n70
+	n10 -> n11
+	n11 -> n12
+	n12 -> n13
+	n13 -> n14
+	n14 -> n15
+	n15 -> n16
+	n16 -> n17
+	n17 -> n18
+	n18 -> n19
+	n19 -> n20
+	n20 -> n21
+	n21 -> n22
+	n22 -> n23
+	n23 -> n24
+	n24 -> n25
+	n25 -> n26
+	n26 -> n27
+	n27 -> n28
+	n28 -> n29
+	n29 -> n30
+	n30 -> n31
+	n31 -> n32
+	n32 -> n33
+	n33 -> n34
+	n34 -> n35
+	n34 -> n67
+	n35 -> n36
+	n36 -> n37
+	n37 -> n38
+	n37 -> n67
+	n38 -> n39
+	n39 -> n40
+	n40 -> n41
+	n41 -> n42
+	n42 -> n43
+	n43 -> n44
+	n44 -> n45
+	n45 -> n46
+	n46 -> n47
+	n47 -> n48
+	n48 -> n49
+	n49 -> n50
+	n50 -> n51
+	n51 -> n52
+	n52 -> n53
+	n53 -> n54
+	n54 -> n55
+	n54 -> n67
+	n55 -> n56
+	n56 -> n57
+	n57 -> n58
+	n58 -> n59
+	n59 -> n60
+	n60 -> n61
+	n61 -> n62
+	n62 -> n63
+	n63 -> n64
+	n64 -> n65
+	n65 -> n66
+	n66 -> n25
+	n67 -> n68
+	n68 -> n69
+	n69 -> n70
+	n70 -> n71
+	n71 -> n72
+
+}

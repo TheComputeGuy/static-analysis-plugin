@@ -1,0 +1,42 @@
+digraph {
+	n0 [label="Start; D: U:"]
+	n1 [label="004013a7; D:ESP,[ESP] U:ESP,ESI"]
+	n2 [label="004013a8; D:ESI U:ESP,4"]
+	n3 [label="004013ac; D:ESP,[ESP] U:ESP,EDI"]
+	n4 [label="004013ad; D:EDI U:ECX"]
+	n5 [label="004013af; D:CF,ZF,SF,OF U:ESI"]
+	n6 [label="004013b1; D: U:ZF"]
+	n7 [label="004013b3; D:CF,ZF,SF,OF,EAX U:EAX"]
+	n8 [label="004013b5; D: U:"]
+	n9 [label="004013b7; D:ESP,[ESP] U:ESP,ESI"]
+	n10 [label="004013b8; D:ESP,EAX U:ESP,[0x402a62]"]
+	n11 [label="004013bd; D:ECX,ESP U:ESP,[ESP]"]
+	n12 [label="004013be; D:ESP,[ESP] U:ESP,EAX"]
+	n13 [label="004013bf; D:ESP,[ESP] U:ESP,ESI"]
+	n14 [label="004013c0; D:ECX U:EDI"]
+	n15 [label="004013c2; D:ESP,EAX U:ESP,[0x4012c5]"]
+	n16 [label="004013c7; D:ESP,EDI U:ESP,[ESP]"]
+	n17 [label="004013c8; D:ESP,ESI U:ESP,[ESP]"]
+	n18 [label="004013c9; D: U:"]
+
+	n0 -> n1
+	n1 -> n2
+	n2 -> n3
+	n3 -> n4
+	n4 -> n5
+	n5 -> n6
+	n6 -> n7
+	n6 -> n9
+	n7 -> n8
+	n8 -> n16
+	n9 -> n10
+	n10 -> n11
+	n11 -> n12
+	n12 -> n13
+	n13 -> n14
+	n14 -> n15
+	n15 -> n16
+	n16 -> n17
+	n17 -> n18
+
+}

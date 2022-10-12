@@ -1,0 +1,77 @@
+digraph {
+	n0 [label="Start; D: U:"]
+	n1 [label="004019eb; D:ESP,[ESP] U:ESP,EDI"]
+	n2 [label="004019ec; D:EDI U:ESP,4"]
+	n3 [label="004019f0; D:CF,ZF,SF,OF U:EDI"]
+	n4 [label="004019f2; D: U:ZF"]
+	n5 [label="004019f4; D:CF,ZF,SF,OF,EAX U:EAX"]
+	n6 [label="004019f6; D:ESP,EDI U:ESP,[ESP]"]
+	n7 [label="004019f7; D: U:"]
+	n8 [label="004019f8; D:ESP,[ESP] U:ESP,ESI"]
+	n9 [label="004019f9; D:ESP,[ESP] U:ESP,EDI"]
+	n10 [label="004019fa; D:CF,ZF,SF,OF,ESI U:ESI"]
+	n11 [label="004019fc; D:ESP,EAX U:ESP,[0x402a62]"]
+	n12 [label="00401a01; D:CF,ZF,SF,OF U:EAX"]
+	n13 [label="00401a03; D:ECX,ESP U:ESP,[ESP]"]
+	n14 [label="00401a04; D: U:CF,ZF"]
+	n15 [label="00401a06; D:CL U:ESI"]
+	n16 [label="00401a09; D:CF,ZF,SF,OF U:CL"]
+	n17 [label="00401a0b; D: U:ZF"]
+	n18 [label="00401a0d; D:CF,ZF,SF,OF U:CL"]
+	n19 [label="00401a10; D: U:ZF"]
+	n20 [label="00401a12; D:CF,ZF,SF,OF U:CL"]
+	n21 [label="00401a15; D: U:ZF"]
+	n22 [label="00401a17; D:ESI,SF,ZF,OF U:ESI"]
+	n23 [label="00401a18; D:CF,ZF,SF,OF U:EAX,ESI"]
+	n24 [label="00401a1a; D: U:CF"]
+	n25 [label="00401a1c; D:CF,ZF,SF,OF U:ESI"]
+	n26 [label="00401a20; D: U:ZF"]
+	n27 [label="00401a22; D:[ESI+EDI] U:ESI"]
+	n28 [label="00401a26; D:ESI,SF,ZF,OF U:ESI"]
+	n29 [label="00401a27; D:ESI,SF,ZF,OF U:ESI"]
+	n30 [label="00401a28; D:EAX U:ESI"]
+	n31 [label="00401a2b; D:ESP,ESI U:ESP,[ESP]"]
+	n32 [label="00401a2c; D:ESP,EDI U:ESP,[ESP]"]
+	n33 [label="00401a2d; D: U:"]
+
+	n0 -> n1
+	n1 -> n2
+	n2 -> n3
+	n3 -> n4
+	n4 -> n5
+	n4 -> n8
+	n5 -> n6
+	n6 -> n7
+	n8 -> n9
+	n9 -> n10
+	n10 -> n11
+	n11 -> n12
+	n12 -> n13
+	n13 -> n14
+	n14 -> n15
+	n14 -> n25
+	n15 -> n16
+	n16 -> n17
+	n17 -> n18
+	n17 -> n25
+	n18 -> n19
+	n19 -> n20
+	n19 -> n25
+	n20 -> n21
+	n21 -> n22
+	n21 -> n25
+	n22 -> n23
+	n23 -> n24
+	n24 -> n25
+	n24 -> n15
+	n25 -> n26
+	n26 -> n27
+	n26 -> n30
+	n27 -> n28
+	n28 -> n29
+	n29 -> n30
+	n30 -> n31
+	n31 -> n32
+	n32 -> n33
+
+}

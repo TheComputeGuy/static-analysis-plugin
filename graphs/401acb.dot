@@ -1,0 +1,172 @@
+digraph {
+	n0 [label="Start; D: U:"]
+	n1 [label="00401acb; D:ESP,[ESP] U:ESP,EBP"]
+	n2 [label="00401acc; D:EBP U:ESP"]
+	n3 [label="00401ace; D:CF,ZF,SF,OF,ESP U:ESP"]
+	n4 [label="00401ad1; D:ESP,[ESP] U:ESP,EBX"]
+	n5 [label="00401ad2; D:ESP,[ESP] U:ESP,ESI"]
+	n6 [label="00401ad3; D:CF,ZF,SF,OF,EBX U:EBX"]
+	n7 [label="00401ad5; D:ESP,[ESP] U:ESP,EDI"]
+	n8 [label="00401ad6; D:EDI U:EBP"]
+	n9 [label="00401ad9; D:[EBP+BYTESREAD] U:EBX,EBP"]
+	n10 [label="00401adc; D:[EBP+NUMBEROFBYTESREAD] U:EBX,EBP"]
+	n11 [label="00401adf; D:CF,ZF,SF,OF,ESI U:ESI"]
+	n12 [label="00401ae1; D:[EBP+VAR_C] U:EBX,EBP"]
+	n13 [label="00401ae4; D:EAX U:EBP"]
+	n14 [label="00401ae7; D:ESP,[ESP] U:ESP,EAX"]
+	n15 [label="00401ae8; D:ESP,[ESP] U:[0x404770],ESP"]
+	n16 [label="00401aee; D:ESP,EAX U:ESP,[0x403034]"]
+	n17 [label="00401af4; D:CF,ZF,SF,OF U:EBP"]
+	n18 [label="00401afb; D: U:ZF"]
+	n19 [label="00401afd; D:ESP,[ESP] U:ESP,EBX"]
+	n20 [label="00401afe; D:EAX U:EBP"]
+	n21 [label="00401b01; D:ESP,[ESP] U:ESP,EBX"]
+	n22 [label="00401b02; D:ESP,[ESP] U:ESP,EAX"]
+	n23 [label="00401b03; D:EAX U:"]
+	n24 [label="00401b08; D:CF,ZF,SF,OF,EAX U:EAX,ESI"]
+	n25 [label="00401b0a; D:ESP,[ESP] U:ESP,EAX"]
+	n26 [label="00401b0b; D:EAX U:ESI"]
+	n27 [label="00401b0e; D:ESP,[ESP] U:ESP,EAX"]
+	n28 [label="00401b0f; D:ESP,[ESP] U:ESP,EBP"]
+	n29 [label="00401b12; D:ESP,EAX U:ESP,[0x403030]"]
+	n30 [label="00401b18; D:CF,ZF,SF,OF U:EBX,EBP"]
+	n31 [label="00401b1b; D: U:ZF"]
+	n32 [label="00401b1d; D:CF,ZF,SF,OF U:EBX,EBP"]
+	n33 [label="00401b20; D: U:ZF"]
+	n34 [label="00401b22; D:CF,ZF,SF,OF U:EBP"]
+	n35 [label="00401b26; D: U:CF"]
+	n36 [label="00401b28; D:ESP,[ESP] U:ESP"]
+	n37 [label="00401b2a; D:ESP,EAX U:ESP,[0x403048]"]
+	n38 [label="00401b30; D:[EBP+VAR_C],SF,ZF,OF U:EBP"]
+	n39 [label="00401b33; D: U:"]
+	n40 [label="00401b35; D:CF,ZF,SF,OF U:EBX,EBP"]
+	n41 [label="00401b38; D:[EBP+NUMBEROFBYTESREAD] U:EBX,EBP"]
+	n42 [label="00401b3b; D: U:ZF"]
+	n43 [label="00401b3d; D:EAX U:EBP"]
+	n44 [label="00401b40; D:ESP,[ESP] U:ESP,EBX"]
+	n45 [label="00401b41; D:ESP,[ESP] U:ESP,EAX"]
+	n46 [label="00401b42; D:EAX U:ESI"]
+	n47 [label="00401b45; D:ESP,[ESP] U:ESP,EBP"]
+	n48 [label="00401b48; D:ESP,[ESP] U:ESP,EAX"]
+	n49 [label="00401b49; D:ESP,[ESP] U:ESP,EBP"]
+	n50 [label="00401b4c; D:ESP,EAX U:ESP,[0x40302c]"]
+	n51 [label="00401b52; D:CF,ZF,SF,OF U:EAX"]
+	n52 [label="00401b54; D: U:ZF"]
+	n53 [label="00401b56; D:CF,ZF,SF,OF,ESI U:[EBP+NUMBEROFBYTESREAD],EBP,ESI"]
+	n54 [label="00401b59; D:CF,ZF,SF,OF U:EBX,EBP"]
+	n55 [label="00401b5c; D:[EBP+ARG_8] U:EBX,EBP"]
+	n56 [label="00401b5f; D: U:ZF"]
+	n57 [label="00401b61; D: U:"]
+	n58 [label="00401b63; D:ESP,[ESP] U:[0x404770],ESP"]
+	n59 [label="00401b69; D:ESI U:[0x40308c]"]
+	n60 [label="00401b6f; D:[0x4047a0] U:EBX"]
+	n61 [label="00401b75; D:ESP,EAX,ESI U:ESP,ESI"]
+	n62 [label="00401b77; D:ESP,[ESP] U:ESP,[0x404774]"]
+	n63 [label="00401b7d; D:ESP,EAX,ESI U:ESP,ESI"]
+	n64 [label="00401b7f; D:ESP,[ESP] U:ESP"]
+	n65 [label="00401b81; D:ESP,[ESP] U:ESP,EBX"]
+	n66 [label="00401b82; D:ESP,[ESP] U:ESP"]
+	n67 [label="00401b87; D:ESP,EAX U:ESP,[0x402a74]"]
+	n68 [label="00401b8c; D:ESP,[ESP] U:ESP"]
+	n69 [label="00401b91; D:ESP,[ESP] U:ESP,EDI"]
+	n70 [label="00401b92; D:ESP,EAX U:ESP,[0x402a68]"]
+	n71 [label="00401b97; D:ESP,[ESP] U:ESP,EDI"]
+	n72 [label="00401b98; D:ESP,EAX U:ESP,[0x402a62]"]
+	n73 [label="00401b9d; D:CF,ZF,SF,OF,ESP U:ESP"]
+	n74 [label="00401ba0; D:ESI U:EAX"]
+	n75 [label="00401ba2; D:EAX U:ESI"]
+	n76 [label="00401ba4; D:ESP,EDI U:ESP,[ESP]"]
+	n77 [label="00401ba5; D:ESP,ESI U:ESP,[ESP]"]
+	n78 [label="00401ba6; D:ESP,EBX U:ESP,[ESP]"]
+	n79 [label="00401ba7; D: U:"]
+	n80 [label="00401ba8; D: U:"]
+
+	n0 -> n1
+	n1 -> n2
+	n2 -> n3
+	n3 -> n4
+	n4 -> n5
+	n5 -> n6
+	n6 -> n7
+	n7 -> n8
+	n8 -> n9
+	n9 -> n10
+	n10 -> n11
+	n11 -> n12
+	n12 -> n13
+	n13 -> n14
+	n14 -> n15
+	n15 -> n16
+	n16 -> n17
+	n17 -> n18
+	n18 -> n19
+	n18 -> n58
+	n19 -> n20
+	n20 -> n21
+	n21 -> n22
+	n22 -> n23
+	n23 -> n24
+	n24 -> n25
+	n25 -> n26
+	n26 -> n27
+	n27 -> n28
+	n28 -> n29
+	n29 -> n30
+	n30 -> n31
+	n31 -> n32
+	n31 -> n40
+	n32 -> n33
+	n33 -> n34
+	n33 -> n40
+	n34 -> n35
+	n35 -> n36
+	n35 -> n40
+	n36 -> n37
+	n37 -> n38
+	n38 -> n39
+	n39 -> n13
+	n40 -> n41
+	n41 -> n42
+	n42 -> n43
+	n42 -> n75
+	n43 -> n44
+	n44 -> n45
+	n45 -> n46
+	n46 -> n47
+	n47 -> n48
+	n48 -> n49
+	n49 -> n50
+	n50 -> n51
+	n51 -> n52
+	n52 -> n53
+	n52 -> n75
+	n53 -> n54
+	n54 -> n55
+	n55 -> n56
+	n56 -> n57
+	n56 -> n75
+	n57 -> n13
+	n58 -> n59
+	n59 -> n60
+	n60 -> n61
+	n61 -> n62
+	n62 -> n63
+	n63 -> n64
+	n64 -> n65
+	n65 -> n66
+	n66 -> n67
+	n67 -> n68
+	n68 -> n69
+	n69 -> n70
+	n70 -> n71
+	n71 -> n72
+	n72 -> n73
+	n73 -> n74
+	n74 -> n75
+	n75 -> n76
+	n76 -> n77
+	n77 -> n78
+	n78 -> n79
+	n79 -> n80
+
+}

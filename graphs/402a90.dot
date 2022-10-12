@@ -1,0 +1,25 @@
+digraph {
+	n0 [label="Start; D: U:"]
+	n1 [label="00402a90; D:ESP,[ESP] U:ESP"]
+	n2 [label="00402a92; D:ESP,[ESP] U:ESP,EAX"]
+	n3 [label="00402a93; D:EAX U:[0x0]"]
+	n4 [label="00402a99; D:ESP,[ESP] U:ESP,EAX"]
+	n5 [label="00402a9a; D:EAX U:ESP"]
+	n6 [label="00402a9e; D:[0x0] U:ESP"]
+	n7 [label="00402aa5; D:[ESP+0CH] U:ESP,EBP"]
+	n8 [label="00402aa9; D:EBP U:ESP"]
+	n9 [label="00402aad; D:ESP,[ESP] U:ESP,EAX"]
+	n10 [label="00402aae; D: U:"]
+
+	n0 -> n1
+	n1 -> n2
+	n2 -> n3
+	n3 -> n4
+	n4 -> n5
+	n5 -> n6
+	n6 -> n7
+	n7 -> n8
+	n8 -> n9
+	n9 -> n10
+
+}
