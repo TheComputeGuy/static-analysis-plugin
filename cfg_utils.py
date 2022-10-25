@@ -72,6 +72,7 @@ def getDefUseLists(instruction_address) -> Tuple[List[str], List[str]]:
             op_count = op_count + 1
         else:
             break
+    
     defList = set()
     useList = set()
 
@@ -100,9 +101,9 @@ def getDefUseLists(instruction_address) -> Tuple[List[str], List[str]]:
             defList.add(ESP_ADDR)
             useList.add(ESP)
         if POP in mnemonic:
+            defList.add(ESP)
             useList.add(ESP_ADDR)
             useList.add(ESP)
-            defList.add(ESP)
         if CALL in mnemonic:
             defList.add(EAX)
             defList.add(ESP)
@@ -118,7 +119,10 @@ def getDefUseLists(instruction_address) -> Tuple[List[str], List[str]]:
         if mnemonic in CARRY_FLAG_USERS:
             useList.add(CF)
         if mnemonic in ALL_FLAG_DEF_MNEMONICS:
-            defList.add(ALL_FLAGS)
+            defList.add(ZF)
+            defList.add(SF)
+            defList.add(OF)
+            defList.add(CF)
         if INC in mnemonic:
             defList.add(ZF)
             defList.add(SF)
@@ -170,11 +174,11 @@ def getDefUseLists(instruction_address) -> Tuple[List[str], List[str]]:
                         defList.add(str(operand_value).upper())
                 else:
                     useList.add(str(operand_value).upper())
-    return defList, useList
+    return list(defList), list(useList)
 
 def extractBracketParams(input_string: str) -> str:
     brackets_pattern = r"\[[^\]]*\]"
     matches = re.findall(brackets_pattern, input_string)
     if matches:
         return matches[0]
-    return None
+    return ''

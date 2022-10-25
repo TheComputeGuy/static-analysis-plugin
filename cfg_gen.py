@@ -1,18 +1,13 @@
-from atexit import register
 import idaapi
-import idautils
 import ida_funcs
-import idc
-import ida_ua
 from models.base_classes import *
 from cfg_utils import *
 
-
 class CfgPlugin(idaapi.plugin_t):
     flags = idaapi.PLUGIN_UNL
-    comment = "This is a comment"
-    help = "This plugin generates a DOT graph of the CFG of all functions in a binary"
-    wanted_name = "CFG generation plugin"
+    comment = "Author: Shubham Pharande"
+    help = "This plugin generates a DOT graph of the CFG of all functions in the binary, along with an approximate def-use and data definition flow"
+    wanted_name = "Static analysis graph generator"
     wanted_hotkey = "Alt-F2"
 
     def init(self):
@@ -24,6 +19,7 @@ class CfgPlugin(idaapi.plugin_t):
             funcNodes = getNodes(ida_funcs.get_func(func_entry))
             funcEdges = getEdges(funcNodes)
             digraph = Digraph(nodes=funcNodes, edges=funcEdges)
+            digraph.generateDDList()
             dotFileName = '/nethome/spharande3/shared/a3/graphs/' + str(hex(func_entry)[2:]) + '.dot'
             with open(dotFileName, 'w') as dotFile:
                 dotFile.write(str(digraph))

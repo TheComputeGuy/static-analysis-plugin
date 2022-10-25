@@ -1,18 +1,38 @@
-from sre_constants import JUMP
-
-
 START_NODE_LABEL = "Start"
 
+AH = 'AH'
+AL = 'AL'
+BH = 'BH'
+BL = 'BL'
+CH = 'CH'
+CL = 'CL'
+DH = 'DH'
+DL = 'DL'
+AX = 'AX'
+BX = 'BX'
+CX ='CX'
+DX = 'DX'
 EAX = 'EAX'
-ESP = 'ESP'
-ESP_ADDR = '[ESP]'
-EBP = 'EBP'
+EBX = 'EBX'
+ECX = 'ECX'
+EDX = 'EDX'
+A_EQV = [AX, EAX]
+B_EQV = [BX, EBX]
+C_EQV = [CX, ECX]
+D_EQV = [DX, EDX]
+SMALL_REGISTERS = [AH, AL, BH, BL, CH, CL, DH, CL, AX, BX, CX, DX]
 
 ZF = 'ZF'
 CF = 'CF'
 OF = 'OF'
 SF = 'SF'
 ALL_FLAGS = 'CF,ZF,SF,OF'
+ALL_FLAGS_LIST = [CF, ZF, SF, OF]
+
+ESP = 'ESP'
+ESP_ADDR = '[ESP]'
+EBP = 'EBP'
+STACK_REGS = [ESP, ESP_ADDR, EBP]
 
 # Mnemonics
 MOV = 'mov'
